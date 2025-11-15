@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natiq's Premium Knives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 3px solid #444;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #cccccc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .about {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: #0d0d0d;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .products {
+            padding: 2rem 0;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background-color: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #666;
+        }
+
+        .product-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .product-card p {
+            color: #cccccc;
+            margin-bottom: 1rem;
+        }
+
+        .product-card .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 1rem 0;
+        }
+
+        .contact {
+            background-color: #0d0d0d;
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 3px solid #444;
+        }
+
+        footer p {
+            color: #888;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        .feature-list li {
+            color: #cccccc;
+            padding: 0.5rem 0;
+        }
+
+        .feature-list li:before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Natiq's Premium Knives</h1>
+        <p>Quality Blades for Every Need</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Natiq</h2>
+            <p>
+                Welcome to Natiq's Premium Knives! Natiq is dedicated to providing the finest quality knives 
+                for both professional chefs and home cooking enthusiasts. With years of experience in blade 
+                craftsmanship and a passion for excellence, Natiq offers a curated selection of knives that 
+                combine traditional techniques with modern design.
+            </p>
+        </section>
+
+        <section class="products">
+            <h2>Our Premium Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Chef's Knife</h3>
+                    <p>The essential tool for any kitchen. Our 8-inch chef's knife features a perfectly balanced blade 
+                    made from high-carbon stainless steel.</p>
+                    <ul class="feature-list">
+                        <li>High-carbon stainless steel</li>
+                        <li>Ergonomic handle</li>
+                        <li>Razor-sharp edge</li>
+                    </ul>
+                    <div class="price">$149.99</div>
+                </div>
+
+                <div class="product-card">
+                    <h3>Santoku Knife</h3>
+                    <p>Perfect for slicing, dicing, and mincing. This Japanese-style knife excels at precision cutting 
+                    with its unique blade design.</p>
+                    <ul class="feature-list">
+                        <li>Japanese steel</li>
+                        <li>Granton edge</li>
+                        <li>Multipurpose design</li>
+                    </ul>
+                    <div class="price">$129.99</div>
+                </div>
+
+                <div class="product-card">
+                    <h3>Paring Knife</h3>
+                    <p>Small but mighty. Ideal for detailed work, peeling, and trimming. A must-have addition to 
+                    any knife collection.</p>
+                    <ul class="feature-list">
+                        <li>Precision blade</li>
+                        <li>Comfortable grip</li>
+                        <li>Perfect control</li>
+                    </ul>
+                    <div class="price">$59.99</div>
+                </div>
+
+                <div class="product-card">
+                    <h3>Bread Knife</h3>
+                    <p>Serrated perfection for crusty breads and delicate pastries. Cuts cleanly without crushing.</p>
+                    <ul class="feature-list">
+                        <li>Serrated edge</li>
+                        <li>10-inch blade</li>
+                        <li>Durable construction</li>
+                    </ul>
+                    <div class="price">$89.99</div>
+                </div>
+
+                <div class="product-card">
+                    <h3>Utility Knife</h3>
+                    <p>Versatile mid-size knife perfect for a variety of cutting tasks. The go-to knife for everyday use.</p>
+                    <ul class="feature-list">
+                        <li>6-inch blade</li>
+                        <li>All-purpose design</li>
+                        <li>Lightweight</li>
+                    </ul>
+                    <div class="price">$79.99</div>
+                </div>
+
+                <div class="product-card">
+                    <h3>Knife Set - Complete Collection</h3>
+                    <p>Get all five premium knives in our exclusive collection set. Perfect gift or kitchen upgrade!</p>
+                    <ul class="feature-list">
+                        <li>All 5 knives included</li>
+                        <li>Beautiful display case</li>
+                        <li>Save over $100</li>
+                    </ul>
+                    <div class="price">$399.99</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Ready to Order?</h2>
+            <p>Contact Natiq today to place your order or learn more about our premium knife collection.</p>
+            <a href="mailto:natiq@knives.com" class="contact-button">Contact Natiq</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Natiq's Premium Knives. All rights reserved.</p>
+    </footer>
+</body>
+</html>
